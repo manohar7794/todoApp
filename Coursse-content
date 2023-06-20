@@ -1,0 +1,42 @@
+Course content
+
+Module 1: Introduction to Angular
+•	Overview of Angular framework
+•	Setting up Angular development environment
+•	Creating a new Angular project
+•	Understanding the structure of an Angular project
+•	Introduction to TypeScript
+Module 2: Angular Components
+•	Introduction to components in Angular
+•	Creating and using components
+•	Data binding and interpolation
+•	Event handling in components
+•	Component lifecycle hooks
+Module 3: Angular Directives
+•	Understanding directives in Angular
+•	Working with structural directives (ngIf, ngFor)
+•	Working with attribute directives (ngStyle, ngClass)
+•	Creating custom directives
+Module 4: Angular Forms
+•	Introduction to Angular forms
+•	Template-driven forms
+Module 5: Angular Services and Dependency Injection
+•	Understanding services and dependency injection in Angular
+•	Creating and using services
+•	Injecting services into components
+•	Singleton and providedIn patterns
+Module 6: Angular Routing
+•	Introduction to Angular routing
+•	Setting up routes in an Angular application
+•	Navigation and route parameters
+•	Route guards and lazy loading modules
+Module 7: Angular HTTP and API Integration
+•	Making HTTP requests in Angular
+•	Using the HttpClient module
+•	Fetching data from an API
+•	Error handling and HTTP interceptors
+Module 8: Angular State Management
+•	Introduction to state management in Angular
+•	Using RxJS Observables and Subjects
+•	Introduction to NgRx (Redux for Angular)
+•	Managing application state with NgRx
