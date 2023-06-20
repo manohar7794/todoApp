@@ -3,4 +3,7 @@
 
 <div>Accounts</div>
 
-<app-accounts-info></app-accounts-info>
+<app-accounts-info 
+(click)=""
+(onAccountSelect)="onAccountselectedInfo($event)" 
+[accountInfo]="profileInfo.accounts"></app-accounts-info>

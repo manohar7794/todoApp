@@ -1,4 +1,4 @@
-<div class="card" *ngFor="let account of profileInfo.accounts">
+<div (click)="onAccountSelected(account)" class="card" *ngFor="let account of accountInfo">
   <h3>{{account.name}}</h3>
   <p>Balance: {{account.balance}}</p>
 

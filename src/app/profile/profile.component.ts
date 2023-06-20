@@ -18,15 +18,20 @@ export class ProfileComponent implements OnInit {
     },
     {
       name: 'Savings',
-      balance: '0'
+      balance: '1M'
     },{
       name: 'Credit cards',
-      balance: '10000'
+      balance: '000'
     }]
   }
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onAccountselectedInfo(event: any) {
+    console.log('event', event);
+    alert(event.balance);
   }
 
 }
