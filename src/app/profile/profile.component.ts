@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css']
 })
-export class ProfileComponent implements OnInit {
-
+export class ProfileComponent implements OnInit, OnChanges, OnDestroy {
+  // life cycle hooks.
   profileInfo = {
     fn: '',
     ln: '',
@@ -24,11 +25,23 @@ export class ProfileComponent implements OnInit {
       balance: '000'
     }]
   }
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) { 
+    // console.log('constructor');
+    
   }
-
+  ngOnChanges() {
+    // console.log('Test in onchanges');
+  }
+ 
+  ngOnInit() { 
+    // console.log('Test in ngOnInit');
+    
+    
+  }
+   ngOnDestroy() {
+    // console.log('Test in Destroty');
+   }
+  
   onAccountselectedInfo(event: any) {
     console.log('event', event);
     alert(event.balance);

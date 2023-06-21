@@ -1,4 +1,14 @@
 .header {
     display: flex;
     justify-content: space-between;
+    background-color: aquamarine;
+    padding: 1rem;
+    
 }
+
+
+    li {
+        list-style: none;
+        font-size: 1.5rem;
+        padding: 10px;
+    }

@@ -10,6 +10,7 @@ import { SignupComponent } from './Signup/Signup.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
+import { AuthService } from './services/auth.service';
 
 
 @NgModule({

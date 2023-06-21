@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 interface IAccountInfo {
   name: string;
   balance: string;
@@ -8,14 +8,21 @@ interface IAccountInfo {
   templateUrl: './accounts-info.component.html',
   styleUrls: ['./accounts-info.component.css']
 })
-export class AccountsInfoComponent implements OnInit {
+export class AccountsInfoComponent implements OnInit, OnChanges {
   @Input() accountInfo: IAccountInfo[] = [];
 
   @Output() onAccountSelect = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+    // console.log('constructor');
+   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    // console.log('ngOnChanges');
+    
+  }
   ngOnInit() {
+    // console.log('ngOnInit');
   }
 
   onAccountSelected(account : IAccountInfo) {
