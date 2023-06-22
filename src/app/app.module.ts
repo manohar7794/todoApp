@@ -10,8 +10,7 @@ import { SignupComponent } from './Signup/Signup.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { AccountsInfoComponent } from './accounts-info/accounts-info.component';
-import { AuthService } from './services/auth.service';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [						
@@ -26,7 +25,8 @@ import { AuthService } from './services/auth.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

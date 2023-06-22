@@ -17,6 +17,12 @@ const routes: Routes = [{
   path: 'profile',
   component: ProfileComponent,
   canActivate: [AuthGuard]
+}, 
+{
+  path: 'student',
+  loadChildren: () => import('./student/student.module')
+    .then(m => m.StudentModule)
+
 }];
 
 @NgModule({
