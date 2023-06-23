@@ -1,6 +1,7 @@
 import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProfileService } from './profile.service';
+import { IProfile, ProfileService } from './profile.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-profile',
@@ -11,7 +12,7 @@ export class ProfileComponent implements OnInit, OnChanges, OnDestroy {
   // life cycle hooks.
   profileInfo: any;
   constructor(private router: Router,
-    private pService: ProfileService) { 
+    public pService: ProfileService) { 
     // console.log('constructor');
     
   }
@@ -21,7 +22,7 @@ export class ProfileComponent implements OnInit, OnChanges, OnDestroy {
  
   ngOnInit() { 
     // console.log('Test in ngOnInit');
-    this.profileInfo = this.pService.getProfile();
+    // this.profileInfo = this.pService.getProfile();
     
   }
    ngOnDestroy() {

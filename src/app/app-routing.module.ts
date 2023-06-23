@@ -16,7 +16,8 @@ const routes: Routes = [{
 {
   path: 'profile',
   component: ProfileComponent,
-  canActivate: [AuthGuard]
+  canActivate: [AuthGuard],
+  canDeactivate: [AuthGuard]
 }, 
 {
   path: 'student',

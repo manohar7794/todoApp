@@ -16,6 +16,10 @@ export class AuthGuard implements CanActivate {
     }
     return true;
   }
+  canDeactivate() {
+   alert('are you leaving!!!!!');
+    
+  }
 }
 
 

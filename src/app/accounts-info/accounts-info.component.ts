@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
-interface IAccountInfo {
+export interface IAccountInfo {
   name: string;
   balance: string;
 }
